@@ -12,12 +12,13 @@
         </a>
 
         <nav class="nav">
-            <button class="nav-btn" type="button"> </button>
-            <ul>
-                <li><a class="nav__link nav__link--current" href="#">Главная</a></li>
-                <li><a class="nav__link" href="#">Каталог продукции</a></li>
-                <li><a class="nav__link" href="#">Подбор программы</a></li>
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link nav__link--current" href="#">Главная</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Каталог продукции</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Подбор программы</a></li>
             </ul>
+
+            <button class="nav__btn" type="button"> </button>
         </nav>
     </header>
 
@@ -33,31 +34,33 @@
         </section>
 
         <section class="features">
-          <div class="features__item features__item--weight-loss">
-              <h3 class="features__name">Похудение</h3>
+            <ul class="features__list">
+                <li class="features__item features__item--weight-loss">
+                    <h3 class="features__name">Похудение</h3>
 
-              <p class="features__description">
-                  Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
-                  Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
-              </p>
+                    <p class="features__description">
+                        Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+                        Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+                    </p>
 
-              <a href="catalog.html" class="features__link">
-                  каталог slim
-              </a>
-          </div>
+                    <a href="catalog.html" class="features__link">
+                        каталог slim
+                    </a>
+                </li>
 
-          <div class="features__item features__item--mass-gain">
-              <h3 class="features__name">Набор массы</h3>
+                <li class="features__item features__item--mass-gain">
+                    <h3 class="features__name">Набор массы</h3>
 
-              <p class="features__description">
-                  Заработать авторитет среди дворовых котов и даже собак?
-                  Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
-              </p>
+                    <p class="features__description">
+                        Заработать авторитет среди дворовых котов и даже собак?
+                        Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+                    </p>
 
-              <a href="catalog.html" class="features__link">
-                  каталог pro
-              </a>
-          </div>
+                    <a href="catalog.html" class="features__link">
+                        каталог pro
+                    </a>
+                </li>
+            </ul>
       </section>
 
         <section class="work-example">
@@ -69,9 +72,7 @@
                 </li>
 
                 <li class="work-example__item work-example__item--release">
-                    Выпускается в виде порошка,
-                    который нужно лишь залить
-                    кипятком и готово.
+                    Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
                 </li>
 
                 <li class="work-example__item work-example__item--food">
@@ -83,21 +84,9 @@
                 </li>
             </ul>
 
-            <!--
-                <div class="work-example__item work-example__item--ecology">
-                    <div class="work-example__icon"></div>
-
-                    <p class="work-example__description">
-                        Функциональное питание
-                        содержит только полезные
-                        питательные вещества.
-                    </p>
-
-                    --- <div class="work-example__bg">1</div>
-                    --- Перечисление можно сделать через стили, css счетчик называется.
-
-                </div>
-            -->
+            <!--<div class="work-example__bg">1</div>
+                 --- Перечисление можно сделать через стили, css счетчик называется.
+                </div> -->
 
         </section>
 
@@ -111,14 +100,14 @@
             </p>
 
             <dl class="demo__stat">
-                <dd>5 КГ</dd>
-                <dt>снижение веса</dt>
+                <dt>5 КГ</dt>
+                <dd>снижение веса</dd>
 
-                <dd>60 ДНЕЙ</dd>
-                <dt>затрачено времени</dt>
-
-                <dt>Затраты на питание:</dt> <dd> 15 000 РУБ.</dd>
+                <dt>60 ДНЕЙ</dt>
+                <dd>затрачено времени</dd>
             </dl>
+
+            <p class="demo__expenses">Затраты на питание: 15 000 РУБ.</p>
 
             <div class="demo__result">
                 <div class="demo__image">
