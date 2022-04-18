@@ -32,18 +32,18 @@
 
             <section class="form__section">
                 <p class="form__group">
-                    <label class="form__label" for="cat_name">ИМЯ:<abbr title="Поле обязательно заполнить">*</abbr></label>
-                    <input class="form__input" type="text" name="name" id="cat_name" placeholder="Введите имя кота" value="Барсик" required>
+                    <label class="form__label" for="cat-name">ИМЯ:<abbr title="Поле обязательно заполнить">*</abbr></label>
+                    <input class="form__input" type="text" name="cat_name" id="cat-name" placeholder="Барсик" required>
                 </p>
 
                 <p class="form__group">
                     <label class="form__label" for="weight">Вес (кг):<abbr title="Поле обязательно заполнить">*</abbr></label>
-                    <input class="form__input" type="text" name="weight" id="cat_name" placeholder="Введите вес кота" value="7" required>
+                    <input class="form__input" type="text" name="weight" id="weight" placeholder="7" required>
                 </p>
 
                 <p class="form__group">
                     <label class="form__label" for="age">Возраст (лет):</label>
-                    <input class="form__input" type="text" name="age" id="cat_name" placeholder="Введите возраст кота" value="7 лет">
+                    <input class="form__input" type="text" name="age" id="age" placeholder="7">
                 </p>
 
                 <p class="form__group">
@@ -66,23 +66,19 @@
                 <h2 class="h2-title">Контактные данные (владельца кота)</h2>
 
                 <p class="form__group">
-                    <label class="form__label" for="owner_name">E-mail:<abbr title="Поле обязательно заполнить">*</abbr></label>
-                    <input class="form__input" type="email" id="owner_name" name="owner_name" placeholder="Введите эл.почту" value="kuklachev@gmail.com" required>
+                    <label class="form__label" for="owner-name">E-mail:<abbr title="Поле обязательно заполнить">*</abbr></label>
+                    <input class="form__input" type="email" id="owner-name" name="owner-name" placeholder="kuklachev@gmail.com" required>
                 </p>
 
                 <p class="form__group">
-                    <label class="form__label" for="owner_phone">Телефон:<abbr title="Поле обязательно заполнить">*</abbr></label>
-                    <input class="form__input" type="tel" name="owner_phone" id="owner_phone" placeholder="+7 (___) ___-__-__" value="8(960)900-60-90" required>
+                    <label class="form__label" for="owner-phone">Телефон:<abbr title="Поле обязательно заполнить">*</abbr></label>
+                    <input class="form__input" type="tel" name="owner-phone" id="owner-phone" placeholder="8 (960) 900-60-90" required>
                 </p>
             </section>
 
             <section class="form__section">
-                <h2>Комментарий</h2>
-
-                <p class="form__comments">
-                    <label class="form__label" for="about-cat">Расскажите обо всех повадках кота</label>
-                    <textarea class="form__textarea" id="about-cat" name="about-cat" rows="4" cols="50"></textarea>
-                </p>
+                <h2 class="h2-title">Комментарий</h2>
+                <textarea class="form__textarea" id="about-cat" name="about-cat" rows="4" cols="50" placeholder="Расскажите обо всех повадках кота"></textarea>
             </section>
 
             <section class="form__section">
