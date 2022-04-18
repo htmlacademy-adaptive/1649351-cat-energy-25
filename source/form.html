@@ -23,17 +23,18 @@
     </header>
 
     <main class="main">
-        <form class="form" action="https://echo.htmlacademy.ru" method="POST">
-            <h1 class="h1-title">Подбор программы</h1>
+        <section>
+          <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+              <h1 class="h1-title">Подбор программы</h1>
 
-            <p class="form__description">
-                Заполните анкету, и мы подберем программу питания для вашего кота
-            </p>
+              <p class="form__description">
+                  Заполните анкету, и мы подберем программу питания для вашего кота
+              </p>
 
-            <section class="form__section">
+              <fieldset class="form__section">
                 <p class="form__group">
-                    <label class="form__label" for="cat-name">ИМЯ:<abbr title="Поле обязательно заполнить">*</abbr></label>
-                    <input class="form__input" type="text" name="cat_name" id="cat-name" placeholder="Барсик" required>
+                  <label class="form__label" for="cat-name">ИМЯ:<abbr title="Поле обязательно заполнить">*</abbr></label>
+                  <input class="form__input" type="text" name="cat_name" id="cat-name" placeholder="Барсик" required>
                 </p>
 
                 <p class="form__group">
@@ -60,33 +61,35 @@
                     <input class="form__radio" type="radio" id="unknown" name="appointment" value="unknown">
                     <label class="form__label" for="unknown">Не знаю (Нужен ваш совет)</label>
                 </p>
-            </section>
+              </fieldset>
 
-            <section class="form__section">
-                <h2 class="h2-title">Контактные данные (владельца кота)</h2>
+              <fieldset class="form__section">
+                <legend>Контактные данные (владельца кота)</legend>
 
                 <p class="form__group">
-                    <label class="form__label" for="owner-name">E-mail:<abbr title="Поле обязательно заполнить">*</abbr></label>
-                    <input class="form__input" type="email" id="owner-name" name="owner-name" placeholder="kuklachev@gmail.com" required>
+                  <label class="form__label" for="owner-name">E-mail:<abbr title="Поле обязательно заполнить">*</abbr></label>
+                  <input class="form__input" type="email" id="owner-name" name="owner-name" placeholder="kuklachev@gmail.com" required>
                 </p>
 
                 <p class="form__group">
                     <label class="form__label" for="owner-phone">Телефон:<abbr title="Поле обязательно заполнить">*</abbr></label>
                     <input class="form__input" type="tel" name="owner-phone" id="owner-phone" placeholder="8 (960) 900-60-90" required>
                 </p>
-            </section>
+              </fieldset>
 
-            <section class="form__section">
-                <h2 class="h2-title">Комментарий</h2>
+
+              <fieldset class="form__section">
+                <legend>Комментарий</legend>
+
                 <textarea class="form__textarea" id="about-cat" name="about-cat" rows="4" cols="50" placeholder="Расскажите обо всех повадках кота"></textarea>
-            </section>
+              </fieldset>
 
-            <section class="form__section">
-                <h2 class="h2-title">Дополнительно</h2>
+              <fieldset class="form__section">
+                <legend>Дополнительно</legend>
 
                 <p class="form__group">
-                    <input class="form__checkbox" type="checkbox" id="sweeteners" name="sweeteners">
-                    <label class="form__label" for="sweeteners">Сахарозаменитель</label>
+                  <input class="form__checkbox" type="checkbox" id="sweeteners" name="sweeteners">
+                  <label class="form__label" for="sweeteners">Сахарозаменитель</label>
                 </p>
 
                 <p class="form__group">
@@ -103,14 +106,15 @@
                     <input class="form__checkbox" type="checkbox" id="vitamins" name="vitamins">
                     <label class="form__label" for="vitamins">Витамины</label>
                 </p>
-            </section>
+              </fieldset>
 
-            <section class="form__section">
-                <button class="button" type="submit">отправить заявку</button>
+              <div class="form__section">
+                  <button class="button" type="submit">отправить заявку</button>
 
-                <p class="form__caption">* — Обязательные поля</p>
-            </section>
-        </form>
+                  <p class="form__caption">* — Обязательные поля</p>
+              </div>
+          </form>
+        </section>
 
         <section class="contacts">
             <div class="contacts___description">
