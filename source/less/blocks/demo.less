@@ -1,0 +1,90 @@
+.demo {
+  background-color: #eaeaea;
+}
+
+.demo-wrapper {
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+.demo__description {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.demo__stat {
+  display: flex;
+  align-items: center;
+}
+
+.demo__expenses {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.demo__image {
+  height: 232px;
+  max-height: 232px;
+  overflow: hidden;
+}
+
+.demo__image-before,
+.demo__image-after {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: none;
+}
+
+.demo__image--show {
+  display: block;
+}
+
+
+.demo__image-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-control {
+  display: flex;
+  align-items: center;
+}
+
+.image-control__btn {
+  .special-text(16px; 20px);
+  margin: 0 20px;
+  border: none;
+}
+
+.image-control__scrollbar {
+  background: #ffffff;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 5px;
+  min-width: 86px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.image-control__scrollbar-toggle {
+  min-width: 35px;
+  max-width: 35px;
+  height: 6px;
+  background: @base_green;
+  border: none;
+  border-radius: 6px;
+}
