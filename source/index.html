@@ -24,8 +24,8 @@
     </header>
 
     <main class="main">
-        <section class="mainscreen">
-            <h1 class="mainscreen__title h1-title"> Функциональное питание для котов </h1>
+        <section class="mainscreen container">
+            <h1 class="mainscreen__title page-title"> Функциональное питание для котов </h1>
 
             <p class="mainscreen__caption"> Занялся собой? Займись котом! </p>
 
@@ -34,7 +34,7 @@
             <a href="form.html" class="mainscreen__button button"> Подобрать программу </a>
         </section>
 
-        <section class="features">
+        <section class="features container">
             <ul class="features__list">
                 <li class="features__item features__item--weight-loss">
                     <h3 class="features__name">Похудение</h3>
@@ -64,7 +64,7 @@
             </ul>
       </section>
 
-        <section class="work-example">
+        <section class="work-example container">
             <h2 class="page-title">Как это работает</h2>
 
             <ul class="work-example__list">
@@ -84,46 +84,44 @@
                     Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
                 </li>
             </ul>
-
-            <!--<div class="work-example__bg">1</div>
-                 --- Перечисление можно сделать через стили, css счетчик называется.
-                </div> -->
-
         </section>
 
         <section class="demo">
-            <h2 class="page-title">Живой пример</h2>
+            <div class="demo-wrapper container">
+              <h2 class="page-title">Живой пример</h2>
 
-            <p class="demo__description">
-                Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-                Отличный результат без изнуряющих тренировок!
-                При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-            </p>
+              <p class="demo__description">
+                  Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+                  Отличный результат без изнуряющих тренировок!
+                  При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+              </p>
 
-            <dl class="demo__stat">
-                <dt>5 КГ</dt>
-                <dd>снижение веса</dd>
+              <dl class="demo__stat">
+                  <dt>5 КГ</dt>
+                  <dd>снижение веса</dd>
 
-                <dt>60 ДНЕЙ</dt>
-                <dd>затрачено времени</dd>
-            </dl>
+                  <dt>60 ДНЕЙ</dt>
+                  <dd>затрачено времени</dd>
+              </dl>
 
-            <p class="demo__expenses">Затраты на питание: 15 000 РУБ.</p>
+              <p class="demo__expenses">Затраты на питание: 15 000 РУБ.</p>
 
-            <div class="demo__result">
-                <div class="demo__image">
-                    <img src="img/index/before-mobile.png" alt="">
-                </div>
+              <div class="demo__result">
+                  <div class="demo__image">
+                      <img class="demo__image-before demo__image--show" src="img/index/before-mobile.png" alt="before">
+                      <img class="demo__image-after" src="img/index/after-mobile.png" alt="after">
+                  </div>
 
-                <div class="demo__image-control image-control">
-                    <button class="image-control__btn" type="button">Было</button>
+                  <div class="demo__image-control image-control">
+                      <button class="image-control__btn" type="button">Было</button>
 
-                    <div class="image-control__scrollbar">
-                        <button class="image-control__scrollbar-toggle" type="button"></button>
-                    </div>
+                      <div class="image-control__scrollbar">
+                          <button class="image-control__scrollbar-toggle" type="button"></button>
+                      </div>
 
-                    <button class="image-control__btn" type="button">Стало</button>
-                </div>
+                      <button class="image-control__btn" type="button">Стало</button>
+                  </div>
+              </div>
             </div>
         </section>
 
@@ -146,20 +144,20 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer container">
         <a href="/">
-            <img src="#" alt="" class="logo">
+          <img src="#" alt="" class="logo">
         </a>
 
         <ul class="socials">
-            <li class="socials__item"><a href="#">vk</a></li>
-            <li class="socials__item"><a href="#">instagram</a></li>
-            <li class="socials__item"><a href="#">facebook</a></li>
+          <li class="socials__item"><a class="socials__link-vk" href="#"></a></li>
+          <li class="socials__item"><a class="socials__link-instagram" href="#">instagram</a></li>
+          <li class="socials__item"><a class="socials__link-facebook" href="#">facebook</a></li>
         </ul>
 
         <a href="https://htmlacademy.ru/" class="site-develop">
-            <span class="site-develop__name">HTML Academy</span>
-            <img class="site-develop__logo" src="img/main/site-develop-logo.png" alt="htmlAcademy">
+          <span class="site-develop__name">HTML Academy</span>
+          <img class="site-develop__logo" src="img/main/site-develop-logo.png" alt="htmlAcademy">
         </a>
     </footer>
 

@@ -1,17 +1,26 @@
 @base_green: #68B738;
 @base_green-hover: #5EAA2F;
 
-.container() {
-  padding: 0 20px;
-}
-
-.h1-title {
+.text (@size; @height) {
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
-  text-align: center;
+  font-size: @size;
+  line-height: @height;
   color: #000000;
+}
+
+.page-title {
+  .text(36px; 36px);
+}
+
+.special-text(@size, @height) {
+  .text(@size, @height);
+  text-transform: uppercase;
+}
+
+.container {
+  padding: 0 20px;
 }
 
 .button {
