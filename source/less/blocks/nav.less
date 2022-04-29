@@ -1,5 +1,6 @@
 .nav {
   position: absolute;
+  z-index: 100;
   right: 0;
   top: 100%;
   width: 100%;
@@ -27,24 +28,25 @@
 }
 
 .nav__link {
-  font-style: normal;
+  .special-text(20px; 20px);
   font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-  text-transform: uppercase;
   text-decoration: none;
-  color: #000000;
 }
 
 .nav__btn {
   position: absolute;
-  top: -45px;
+  top: -43px;
   right: 20px;
   width: 24px;
   height: 16px;
-  background: url("../img/icons/burger.svg") no-repeat center;
-  background-size: cover;
+  background: url("../img/icons/menu-open.png") no-repeat center;
+  background-size: 90%;
   cursor: pointer;
   border: none;
   padding: 0;
+
+  &--active {
+    background: url("../img/icons/close.png") no-repeat center;
+    background-size: contain;
+  }
 }

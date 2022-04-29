@@ -1,22 +1,26 @@
 @base_green: #68B738;
 @base_green-hover: #5EAA2F;
 
-.text (@size; @height) {
-  font-family: "Oswald", sans-serif;
+.text (@font; @size; @height; @color: #000000) {
+  font-family: @font, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: @size;
   line-height: @height;
-  color: #000000;
+  color: @color;
 }
 
 .page-title {
-  .text(36px; 36px);
+  .text("Oswald"; 36px; 36px; );
 }
 
 .special-text(@size, @height) {
-  .text(@size, @height);
+  .text("Oswald"; @size; @height);
   text-transform: uppercase;
+}
+
+.base-text() {
+  .text("Arial"; 14px; 20px; #444444);
 }
 
 .container {
@@ -40,7 +44,7 @@
   &:hover {
     background-color: @base_green-hover;
   }
-  &:active {
-    color: fade(#ffffff, 30%);
-  }
+  // &:active {
+  //   color: fade(#ffffff, 30%);
+  // }
 }

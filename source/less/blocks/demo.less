@@ -7,13 +7,13 @@
   padding-bottom: 40px;
 }
 
+.demo__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
 .demo__description {
-  font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: #444444;
+  .base-text();
 }
 
 .demo__stat {
@@ -22,20 +22,15 @@
 }
 
 .demo__expenses {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
+  .special-text(14px; 20px);
   text-align: center;
-  text-transform: uppercase;
-  color: #000000;
 }
 
 .demo__image {
   height: 232px;
   max-height: 232px;
   overflow: hidden;
+  margin-top: 40px;
 }
 
 .demo__image-before,
@@ -55,6 +50,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .image-control {
@@ -66,6 +62,7 @@
   .special-text(16px; 20px);
   margin: 0 20px;
   border: none;
+  background: none;
 }
 
 .image-control__scrollbar {
@@ -78,6 +75,10 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+
+  &--active {
+    justify-content: flex-end;
+  }
 }
 
 .image-control__scrollbar-toggle {
@@ -87,4 +88,5 @@
   background: @base_green;
   border: none;
   border-radius: 6px;
+  cursor: pointer;
 }
