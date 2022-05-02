@@ -13,7 +13,7 @@
     margin-bottom: 20px;
   }
 
-  .before-block() {
+  &::before {
     display: grid;
     place-items: center;
     min-width: 60px;
@@ -22,25 +22,19 @@
     margin-right: 20px;
   }
 
-  @work-example: "../img/work-example";
-
-  &--ecology::before {
-    content: url("@{work-example}/leaf.svg");
-    .before-block();
+  &--icon-ecology::before {
+    content: url("../img/work-example/leaf.svg");
   }
 
-  &--release::before {
-    content: url("@{work-example}/tub.svg");
-    .before-block();
+  &--icon-release::before {
+    content: url("../img/work-example/tub.svg");
   }
 
-  &--food::before {
-    content: url("@{work-example}/eat.svg");
-    .before-block();
+  &--icon-food::before {
+    content: url("../img/work-example/eat.svg");
   }
 
-  &--result::before {
-    content: url("@{work-example}/alarm.svg");
-    .before-block();
+  &--icon-result::before {
+    content: url("../img/work-example/alarm.svg");
   }
 }

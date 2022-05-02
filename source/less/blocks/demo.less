@@ -2,7 +2,7 @@
   background-color: #eaeaea;
 }
 
-.demo-wrapper {
+.demo__wrapper {
   padding-top: 25px;
   padding-bottom: 40px;
 }
@@ -21,30 +21,6 @@
   align-items: center;
   column-gap: 30px;
   margin-bottom: 35px;
-}
-
-.stat__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid #cdcdcd;
-  border-radius: 3px;
-  position: relative;
-  padding: 15px 20px 0 20px;
-}
-
-.stat__item-term {
-  .special-text(24px; 24px);
-}
-
-.stat__item-definition {
-  .base-text();
-  font-size: 12px;
-  margin: 0 auto;
-  text-align: center;
-  margin-top: 5px;
-  margin-bottom: -20px;
-  background: #eaeaea;
 }
 
 .demo__expenses {
@@ -77,42 +53,4 @@
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-}
-
-.image-control {
-  display: flex;
-  align-items: center;
-}
-
-.image-control__btn {
-  .special-text(16px; 20px);
-  margin: 0 20px;
-  border: none;
-  background: none;
-}
-
-.image-control__scrollbar {
-  background: #ffffff;
-  border: 1px solid #cdcdcd;
-  box-sizing: border-box;
-  border-radius: 6px;
-  padding: 5px;
-  min-width: 86px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-
-  &--active {
-    justify-content: flex-end;
-  }
-}
-
-.image-control__scrollbar-toggle {
-  min-width: 35px;
-  max-width: 35px;
-  height: 6px;
-  background: @base_green;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
 }

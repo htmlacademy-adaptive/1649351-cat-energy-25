@@ -1,0 +1,17 @@
+.text (@font; @size; @height; @color: #000000) {
+  font-family: @font, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: @size;
+  line-height: @height;
+  color: @color;
+}
+
+.special-text(@size, @height) {
+  .text("Oswald"; @size; @height);
+  text-transform: uppercase;
+}
+
+.base-text() {
+  .text("Arial"; 14px; 20px; #444444);
+}
