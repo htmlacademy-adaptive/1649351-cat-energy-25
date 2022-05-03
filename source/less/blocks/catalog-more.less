@@ -1,0 +1,33 @@
+.catalog-more {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0;
+}
+
+.catalog-more__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .special-text(16px; 20px);
+  color: #111111;
+  text-align: center;
+
+  &::before {
+    content: url("../img/icons/plus.svg");
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+.catalog-more__caption {
+  .base-text();
+  font-size: 12px;
+  text-align: center;
+}
+
+.catalog-more__button {
+  margin-top: 20px;
+  width: 100%;
+}

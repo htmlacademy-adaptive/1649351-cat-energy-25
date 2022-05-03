@@ -1,0 +1,31 @@
+.catalog-item__link {
+  text-decoration: none;
+}
+
+.catalog-item__img-wrapper {
+  display: grid;
+  place-items: center;
+}
+
+.catalog-item__img {
+  width: 68px;
+  height: 86px;
+  object-fit: contain;
+
+  &--large {
+    width: 85px;
+    height: 100px;
+    object-fit: contain;
+  }
+}
+
+.catalog-item__name {
+  .special-text(16px; 20px);
+  color: #222222;
+  margin-top: 0;
+}
+
+.catalog-item__button {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
