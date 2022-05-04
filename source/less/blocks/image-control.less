@@ -1,0 +1,37 @@
+.image-control {
+  display: flex;
+  align-items: center;
+}
+
+.image-control__btn {
+  .special-text(16px; 20px);
+  margin: 0 20px;
+  border: none;
+  background: none;
+}
+
+.image-control__scrollbar {
+  background: #ffffff;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 5px;
+  min-width: 86px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &--active {
+    justify-content: flex-end;
+  }
+}
+
+.image-control__scrollbar-toggle {
+  min-width: 35px;
+  max-width: 35px;
+  height: 6px;
+  background: @color_green;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}

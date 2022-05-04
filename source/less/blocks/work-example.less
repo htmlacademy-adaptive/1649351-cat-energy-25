@@ -1,0 +1,40 @@
+.work-example__list {
+  padding: 0;
+  margin: 40px 0;
+  list-style-type: none;
+}
+
+.work-example__item {
+  display: flex;
+  align-items: center;
+  .base-text();
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &::before {
+    display: grid;
+    place-items: center;
+    min-width: 60px;
+    min-height: 60px;
+    background-color: @color_green;
+    margin-right: 20px;
+  }
+
+  &--icon-ecology::before {
+    content: url("../img/work-example/leaf.svg");
+  }
+
+  &--icon-release::before {
+    content: url("../img/work-example/tub.svg");
+  }
+
+  &--icon-food::before {
+    content: url("../img/work-example/eat.svg");
+  }
+
+  &--icon-result::before {
+    content: url("../img/work-example/alarm.svg");
+  }
+}

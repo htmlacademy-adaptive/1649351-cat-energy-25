@@ -1,0 +1,34 @@
+.button {
+  display: block;
+  border: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 11px;
+  box-sizing: border-box;
+  background-color: @color_green;
+  color: #ffffff;
+
+  &:hover {
+    background-color: @color_green-hover;
+  }
+  &:active {
+    color: fade(#ffffff, 30%);
+  }
+
+  &--gray {
+    background-color: @color_gray;
+    color: #444444;
+
+    &:hover{
+      background-color: @color_gray-hover;
+    }
+    &:active {
+      color: fade(#444444, 30%);
+    }
+  }
+}
