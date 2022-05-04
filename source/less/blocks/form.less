@@ -55,11 +55,12 @@
   }
 
   &:hover {
-    border-color: 1px solid #cdcdcd;
+    box-shadow: 0 0 0 2px #cdcdcd;
   }
 
   &:focus {
-    border: 2px solid #444444;
+    box-shadow: 0 0 0 2px #444444;
+    outline: none;
   }
 
   // &:invalid {
@@ -87,7 +88,7 @@
 }
 
 .form__radio + .form__label::before {
-  content: '';
+  content: "";
   display: block;
   width: 30px;
   height: 30px;
@@ -102,7 +103,7 @@
 }
 
 .form__radio:checked + .form__label::after {
-  content: '';
+  content: "";
   display: block;
   width: 13px;
   height: 13px;
@@ -123,7 +124,7 @@
 }
 
 .form__checkbox + .form__label::before {
-  content: '';
+  content: "";
   display: grid;
   place-items: center;
   width: 30px;
@@ -134,7 +135,7 @@
 }
 
 .form__checkbox:checked + .form__label::before {
-  content: url('../img/icons/check.svg');
+  content: url("../img/icons/check.svg");
 }
 
 .form__submit {
