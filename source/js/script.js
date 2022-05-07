@@ -1,8 +1,8 @@
 $( document ).ready(function() {
 
   // nav open|close
-  $(".nav__btn").on("click", function() {
-    $(this).toggleClass('nav__btn--active');
+  $(".nav__toggle").on("click", function() {
+    $(this).toggleClass('nav__toggle--active');
     $('.nav__list').toggleClass('nav__list--show');
   });
 
