@@ -2,11 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page">
-    <header class="header">
+    <header class="header container">
       <a href="/" class="header__logo">
         <img src="/img/logos/logo-group.svg" alt="logo_text.png" class="logo-header">
       </a>
@@ -18,18 +19,17 @@
           <li class="nav__item"><a class="nav__link" href="#">Подбор программы</a></li>
         </ul>
 
-        <button class="nav__btn" type="button"></button>
+        <button class="nav__toggle" type="button"></button>
       </nav>
     </header>
 
     <main class="main">
       <section class="mainscreen container">
-        <h1 class="mainscreen__title page-title"> Функциональное питание для котов </h1>
-
-        <p class="mainscreen__caption"> Занялся собой? Займись котом! </p>
-
+        <div class="mainscreen__wrapper">
+          <h1 class="mainscreen__title page-title"> Функциональное питание для котов </h1>
+          <p class="mainscreen__caption"> Занялся собой? Займись котом! </p>
+        </div>
         <img src="img/index/main-screen-front.png" alt="main-screen-front" class="mainscreen__background-front">
-
         <a href="form.html" class="mainscreen__button button"> Подобрать программу </a>
       </section>
 
@@ -86,27 +86,29 @@
 
       <section class="demo">
         <div class="demo__wrapper container">
-          <h2 class="demo__title page-title">Живой пример</h2>
+          <div class="demo__description">
+            <h2 class="demo__title page-title">Живой пример</h2>
 
-          <p class="demo__description">
-            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-            Отличный результат без изнуряющих тренировок!
-            При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-          </p>
+            <p class="demo__text">
+              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+              Отличный результат без изнуряющих тренировок!
+              При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+            </p>
 
-          <dl class="demo__stat stat">
-            <div class="stat__item">
-              <dt class="stat__item-term">5 КГ</dt>
-              <dd class="stat__item-definition">снижение веса</dd>
-            </div>
+            <dl class="demo__stat stat">
+              <div class="stat__item">
+                <dt class="stat__item-term">5 КГ</dt>
+                <dd class="stat__item-definition">снижение веса</dd>
+              </div>
 
-            <div class="stat__item">
-              <dt class="stat__item-term">60 ДНЕЙ</dt>
-              <dd class="stat__item-definition">затрачено времени</dd>
-            </div>
-          </dl>
+              <div class="stat__item">
+                <dt class="stat__item-term">60 ДНЕЙ</dt>
+                <dd class="stat__item-definition">затрачено времени</dd>
+              </div>
+            </dl>
 
-          <p class="demo__expenses">Затраты на питание: 15 000 РУБ.</p>
+            <p class="demo__expenses">Затраты на питание: 15 000 РУБ.</p>
+          </div>
 
           <div class="demo__result">
             <div class="demo__image">
@@ -128,14 +130,17 @@
       </section>
 
       <section class="contacts">
-        <div class="contacts___description container">
-          <h2 class="contacts__title">
-            Приглашаем к сотрудничеству дилеров!
-          </h2>
 
-          <p class="contacts__address">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </p>
+        <div class="contacts___description-wrapper">
+          <div class="contacts___description container">
+            <h2 class="contacts__title">
+              Приглашаем к сотрудничеству дилеров!
+            </h2>
+
+            <p class="contacts__address">
+              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            </p>
+          </div>
         </div>
 
         <div class="contacts___map">
@@ -144,21 +149,23 @@
       </section>
     </main>
 
-    <footer class="footer container">
-      <a class="footer__logo" href="/">
-        <img src="img/logos/name-company.svg" alt="Логотип сайта для подвала" class="logo-footer">
-      </a>
+    <footer class="footer">
+      <div class="footer__wrapper container">
+        <a class="footer__logo" href="/">
+          <img src="img/logos/name-company.svg" alt="Логотип сайта для подвала" class="logo-footer">
+        </a>
 
-      <ul class="footer__socials socials">
-        <li class="socials__item"><a class="socials__link socials__link--icon-vk" href="#"></a></li>
-        <li class="socials__item"><a class="socials__link socials__link--icon-youtube" href="#"></a></li>
-        <li class="socials__item"><a class="socials__link socials__link--icon-telegram" href="#"></a></li>
-      </ul>
+        <ul class="footer__socials socials">
+          <li class="socials__item"><a class="socials__link socials__link--icon-vk" href="#"></a></li>
+          <li class="socials__item"><a class="socials__link socials__link--icon-youtube" href="#"></a></li>
+          <li class="socials__item"><a class="socials__link socials__link--icon-telegram" href="#"></a></li>
+        </ul>
 
-      <a class="footer__site-develop site-develop" href="https://htmlacademy.ru/">
-        <span class="site-develop__name">HTML Academy</span>
-        <img class="site-develop__logo" src="img/logos/site-develop-logo.png" alt="Логотип разработчика">
-      </a>
+        <a class="footer__site-develop site-develop" href="https://htmlacademy.ru/">
+          <span class="site-develop__name">HTML Academy</span>
+          <img class="site-develop__logo" src="img/logos/site-develop-logo.png" alt="Логотип разработчика">
+        </a>
+      </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

@@ -2,6 +2,20 @@
   padding: 0;
   margin: 40px 0;
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 150px;
+    row-gap: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 95px;
+    row-gap: 0;
+  }
 }
 
 .work-example__item {

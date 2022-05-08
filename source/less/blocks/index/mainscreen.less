@@ -1,0 +1,38 @@
+.mainscreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  background: url("../img/index/main_bg.png") no-repeat top;
+  background-size: 100%;
+
+  @media (min-width: @tablet-width) {
+    background: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: url("../img/index/main_bg.png") no-repeat right;
+  }
+}
+
+.mainscreen__caption {
+  .base-text();
+}
+
+.mainscreen__title,
+.mainscreen__caption {
+  color: #ffffff;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    color: #000000;
+  }
+}
+
+.mainscreen__button {
+  width: 100%;
+}
