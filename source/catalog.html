@@ -7,7 +7,7 @@
     <title>Каталог продукции</title>
   </head>
   <body class="page catalog-page">
-    <header class="header">
+    <header class="header container">
       <a href="/" class="header__logo">
         <img src="/img/logos/logo-group.svg" alt="logo_text.png" class="logo-header">
       </a>
@@ -24,7 +24,7 @@
     </header>
 
     <main class="main">
-      <section class="catalog">
+      <section class="catalog container">
       	<h1 class="page-title container">Каталог продукции</h1>
 
         <ul class="catalog__list">
@@ -244,74 +244,82 @@
       <section class="catalog-additional container">
         <h2 class="section-title split-title">Дополнительные товары</h2>
 
-        <ul class="catalog-additional__list">
-          <li class="catalog-additional__item catalog-item">
-            <a href="#" class="catalog-item__link">
-              <h3 class="catalog-item__name">Сахарозаменитель</h3>
-            </a>
+        <div class="catalog-additional__wrapper">
+          <ul class="catalog-additional__list">
+            <li class="catalog-additional__item catalog-item">
+              <a href="#" class="catalog-item__link">
+                <h3 class="catalog-item__name">Сахарозаменитель</h3>
+              </a>
 
-            <p class="catalog-item__properties properties properties__item">
-              <span class="properties__name">1 упаковка (100 г)</span>
-              <span class="properties__value">200 Р.</span>
+              <p class="catalog-item__properties properties properties__item">
+                <span class="properties__name">1 упаковка (100 г)</span>
+                <span class="properties__value">200 Р.</span>
+              </p>
+
+              <a href="form.html" class="catalog-item__button button">Заказать</a>
+            </li>
+
+            <li class="catalog-additional__item catalog-item">
+              <a href="#" class="catalog-item__link">
+                <h3 class="catalog-item__name">Питьевая вода</h3>
+              </a>
+
+              <p class="catalog-item__properties properties properties__item">
+                <span class="properties__name">5 литров</span>
+                <span class="properties__value">50 Р.</span>
+              </p>
+
+              <a href="form.html" class="catalog-item__button button">Заказать</a>
+            </li>
+
+            <li class="catalog-additional__item catalog-item">
+              <a href="#" class="catalog-item__link">
+                <h3 class="catalog-item__name">Молоко</h3>
+              </a>
+
+              <p class="catalog-item__properties properties properties__item">
+                <span class="properties__name">1 литров</span>
+                <span class="properties__value">100 Р.</span>
+              </p>
+
+              <a href="form.html" class="catalog-item__button button">Заказать</a>
+            </li>
+
+            <li class="catalog-additional__item catalog-item">
+              <a href="#" class="catalog-item__link">
+                <h3 class="catalog-item__name">Витамины</h3>
+              </a>
+
+              <p class="catalog-item__properties properties properties__item">
+                <span class="properties__name">1 упаковка (30 г)</span>
+                <span class="properties__value">300 Р.</span>
+              </p>
+
+              <a href="form.html" class="catalog-item__button button">Заказать</a>
+            </li>
+          </ul>
+
+          <div class="cta">
+            <p class="cta__text-wrapper">
+              <span class="cta__text">
+                Закажите все и получите чехол для кота в подарок!
+              </span>
             </p>
-
-            <a href="form.html" class="catalog-item__button button">Заказать</a>
-          </li>
-
-          <li class="catalog-additional__item catalog-item">
-            <a href="#" class="catalog-item__link">
-              <h3 class="catalog-item__name">Питьевая вода</h3>
-            </a>
-
-            <p class="catalog-item__properties properties properties__item">
-              <span class="properties__name">5 литров</span>
-              <span class="properties__value">50 Р.</span>
-            </p>
-
-            <a href="form.html" class="catalog-item__button button">Заказать</a>
-          </li>
-
-          <li class="catalog-additional__item catalog-item">
-            <a href="#" class="catalog-item__link">
-              <h3 class="catalog-item__name">Молоко</h3>
-            </a>
-
-            <p class="catalog-item__properties properties properties__item">
-              <span class="properties__name">1 литров</span>
-              <span class="properties__value">100 Р.</span>
-            </p>
-
-            <a href="form.html" class="catalog-item__button button">Заказать</a>
-          </li>
-
-          <li class="catalog-additional__item catalog-item">
-            <a href="#" class="catalog-item__link">
-              <h3 class="catalog-item__name">Витамины</h3>
-            </a>
-
-            <p class="catalog-item__properties properties properties__item">
-              <span class="properties__name">1 упаковка (30 г)</span>
-              <span class="properties__value">300 Р.</span>
-            </p>
-
-            <a href="form.html" class="catalog-item__button button">Заказать</a>
-          </li>
-        </ul>
-
-        <div class="cta">
-          <p class="cta__text">Закажите все и получите чехол для кота в подарок!</p>
+          </div>
         </div>
       </section>
 
       <section class="contacts">
-        <div class="contacts___description container">
-          <h2 class="contacts__title">
-            Приглашаем к сотрудничеству дилеров!
-          </h2>
+        <div class="contacts___description-wrapper">
+          <div class="contacts___description container">
+            <h2 class="contacts__title">
+              Приглашаем к сотрудничеству дилеров!
+            </h2>
 
-          <p class="contacts__address">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </p>
+            <p class="contacts__address">
+              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            </p>
+          </div>
         </div>
 
         <div class="contacts___map">
