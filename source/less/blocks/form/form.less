@@ -1,21 +1,32 @@
-.form {
-  padding: 15px 0;
-}
-
 .form abbr {
   text-decoration: none;
+}
+
+.form legend {
+  width: 100%;
 }
 
 .form__fieldset {
   padding: 0;
   border: none;
-  margin: 15px 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.form__flex-wrapper {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
 }
 
 .form__description {
   .special-text(14px; 18px);
   margin: 40px 0;
 }
+
+// GROUP
 
 .form__group {
   display: flex;
@@ -27,6 +38,8 @@
   }
 }
 
+// LABEL
+
 .form__label {
   display: flex;
   align-items: center;
@@ -36,6 +49,8 @@
   white-space: nowrap;
   position: relative;
 }
+
+// INPUT
 
 .form__input,
 .form__textarea {
@@ -72,13 +87,38 @@
   resize: none;
 }
 
-.form__radio-wrapper {
-  padding: 20px;
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
+// RADIO
+
+.form__fieldset-radio {
+  @media (max-width: @tablet-width) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &::before,
+    &::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      border-bottom: 1px solid #d9d9d9;
+    }
+
+    &::before {
+      margin-top: -20px;
+    }
+
+    &::after {
+      margin-top: 20px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    border: 1px solid #d9d9d9;
+    padding: 20px;
+  }
 }
 
-// input radio style
 .form__radio {
   display: none;
 }
@@ -114,7 +154,8 @@
   top: 8px;
 }
 
-// input checkbox style
+// CHECKBOX
+
 .form__checkbox {
   display: none;
 }
@@ -145,4 +186,24 @@
 .form__caption {
   .base-text();
   text-align: center;
+}
+
+.form__additional {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 100px;
+  }
+}
+
+.form__submit-wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
