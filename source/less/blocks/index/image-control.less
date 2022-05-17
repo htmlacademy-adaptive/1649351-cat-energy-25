@@ -4,10 +4,22 @@
 }
 
 .image-control__btn {
-  .special-text(16px; 20px);
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  text-transform: uppercase;
   margin: 0 20px;
+  padding: 0;
   border: none;
   background: none;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }
 
 .image-control__scrollbar {
@@ -15,7 +27,7 @@
   border: 1px solid #cdcdcd;
   box-sizing: border-box;
   border-radius: 6px;
-  padding: 5px;
+  padding: 3px 5px;
   min-width: 86px;
   display: flex;
   align-items: center;
