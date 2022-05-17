@@ -1,12 +1,15 @@
 .socials {
-  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   list-style-type: none;
-  column-gap: 25px;
+  column-gap: 24px;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
 }
 
 .socials__link {

@@ -1,72 +1,83 @@
 .nav {
-  position: absolute;
-  z-index: 100;
-  right: 0;
-  top: 100%;
-  width: 100%;
+  margin-top: 10px;
 
-  @media (min-width: @tablet-width) {
-    position: relative;
-    width: auto;
-  }
+  // @media (min-width: @tablet-width) {
+  //   position: relative;
+  //   width: auto;
+  // }
 }
 
 .nav__list {
   display: none;
-  flex-direction: column;
+  list-style-type: none;
   padding: 0;
   margin: 0;
-  list-style-type: none;
-  left: 0;
+  position: absolute;
+  z-index: 100;
   background: #ffffff;
+  left: 0;
   width: 100%;
 
   &--show {
-    display: flex;
+    display: block;
   }
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: flex-end;
   }
 }
 
 .nav__item {
-  border-top: 1px solid #e6e6e6;
-  padding: 25px;
+  padding-top: 22px;
+  padding-bottom: 20px;
   text-align: center;
+  border-top: 1px solid #e6e6e6;
 
   @media (min-width: @tablet-width) {
-    padding: 25px 0 25px 25px;
-    border-top: none;
+    // padding: 25px 0 25px 25px;
+    // border-top: none;
   }
 }
 
 .nav__link {
-  .special-text(20px; 20px);
-  font-weight: 500;
+  .special-text(20px; 1);
+  font-weight: 600;
   text-decoration: none;
 }
 
 .nav__toggle {
-  position: absolute;
-  top: -43px;
-  right: 20px;
   width: 24px;
-  height: 16px;
-  background: url("../img/icons/menu-open.png") no-repeat center;
-  background-size: 90%;
-  cursor: pointer;
+  height: 17.5px;
+  position: absolute;
+  top: 25px;
+  right: 27px;
   border: none;
-  padding: 0;
+  background: transparent;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 1.5px;
+    background-color: #000000;
+    box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+    position: relative;
+    top: -12px;
+    left: -7px;
+  }
 
   &--active {
     background: url("../img/icons/close.png") no-repeat center;
     background-size: contain;
+
+    &::before {
+      display: none;
+    }
   }
 
   @media (min-width: @tablet-width) {
-    display: none;
+    // display: none;
   }
 }
