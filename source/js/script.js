@@ -1,12 +1,38 @@
+// NAVIGATION
+
+let navMain = document.querySelector('.nav');
+let navToggle = document.querySelector('.nav__toggle');
+
+navMain.classList.remove('nav--nojs');
+
+navToggle.addEventListener('click', function () {
+  if (navMain.classList.contains('nav--closed')) {
+    navMain.classList.remove('nav--closed');
+    navMain.classList.add('nav--opened');
+  } else {
+    navMain.classList.add('nav--closed');
+    navMain.classList.remove('nav--opened');
+  }
+});
+
+
+// IMAGE-CONTROLE
+
+// let imgControlScrollbar = document.querySelector('.image-control__scrollbar');
+// let imgBefore = document.querySelector('.demo__image-before');
+// let imgAfter = document.querySelector('.demo__image-after');
+
+// imgControlScrollbar.addEventListener('click', function () {
+//   if (imgBefore.classList.contains('demo__image--show')) {
+//     imgBefore.classList.removeClass('demo__image--show');
+//     imgAfter.classList.add('demo__image--show');
+//   } else {
+//     imgBefore.classList.addClass('demo__image--show');
+//     imgAfter.classList.adremoveClass('demo__image--show');
+//   }
+// });
+
 $( document ).ready(function() {
-
-  // nav open|close
-
-  $(".nav__toggle").on("click", function() {
-    $(this).toggleClass('nav__toggle--active');
-    $('.nav__list').toggleClass('nav__list--show');
-  });
-
 
   // image-control
 
@@ -23,6 +49,49 @@ $( document ).ready(function() {
     }
   });
 
+
+  // -------------- Слайдер до | после
+
+  function imageComparison(selector) {
+
+    let comparison = $(selector)
+        .addClass('image-comparison')
+        .prepend('<div class="image-comparison__before"></div>')
+        .append('<div>БЫЛО</div>')
+        .append('<button class="image-comparison__slider"></button>')
+        .append('<div>СТАЛО</div>');
+
+    let images = comparison
+        .find('img')
+        .addClass('image-comparison__image')
+        .css('max-width', comparison.width());
+
+    let before = comparison
+        .find('.image-comparison__before')
+        .append(images.eq(0));
+
+    comparison
+        .find('.image-comparison__slider')
+        .on('dragstart', () => false) // отмена станд. drug&drop
+        .on('mousedown', function(e) {
+            let slider = $(this);
+            let doc = $(document).on('mousemove', (e) => {
+                let offset = e.pageX - comparison.position().left;
+                let width = comparison.width();
+
+                // установим границы, чтобы ползунок не выходил
+                if (offset < 0) offset = 0;
+                if (offset > width) offset = width;
+
+                slider.css('left', offset + 'px');
+                before.css('width', offset + 'px');
+            });
+
+            doc.on('mouseup', () => doc.off('mousemove'));
+        });
+};
+
+imageComparison('#image-comparison');
 
 });
 
@@ -57,3 +126,6 @@ $( document ).ready(function() {
 //   myMap.geoObjects
 //       .add(myPlacemark);
 // });
+
+
+
