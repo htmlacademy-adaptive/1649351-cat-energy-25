@@ -1,13 +1,19 @@
 .header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
   position: relative;
-  padding-top: 15px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid #d9d9d9;
+  padding-top: 10px;
+  padding-bottom: 11px;
 
   @media (min-width: @tablet-width) {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
   }
+}
+
+.header__logo {
+  width: max-content;
 }

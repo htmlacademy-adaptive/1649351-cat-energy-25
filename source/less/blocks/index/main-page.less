@@ -1,0 +1,17 @@
+.main-page {
+  @media (min-width: @desktop-width) {
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 50%;
+      height: 694px;
+      background: url("../img/index/mainscreen_desktop.png") no-repeat top;
+      background-size: cover;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+    }
+  }
+}

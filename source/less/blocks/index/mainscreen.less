@@ -7,32 +7,111 @@
   z-index: 1;
   background: url("../img/index/main_bg.png") no-repeat top;
   background-size: 100%;
+  padding-bottom: 40px;
 
   @media (min-width: @tablet-width) {
     background: none;
+    align-items: flex-start;
+    padding-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background: url("../img/index/main_bg.png") no-repeat right;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-bottom: 55px;
+    margin-bottom: 82px;
+  }
+}
+
+.mainscreen__wrapper {
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 90px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+    padding-left: 70px;
   }
 }
 
 .mainscreen__caption {
-  .base-text();
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  padding-top: 25px;
+  padding-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 41px;
+    padding-bottom: 50px;
+  }
+}
+
+.mainscreen__title {
+  padding-top: 27px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 40px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 95px;
+  }
 }
 
 .mainscreen__title,
 .mainscreen__caption {
   color: #ffffff;
   text-align: center;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     color: #000000;
+    text-align: left;
+  }
+}
+
+.mainscreen__title br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.mainscreen__background-front {
+  width: 280px;
+  height: 270px;
+  object-fit: contain;
+
+  @media (min-width: @tablet-width) {
+    width: 709px;
+    height: 609px;
+    margin-top: -88px;
+    z-index: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 552px;
+    height: 500px;
+    margin-top: 20px;
   }
 }
 
 .mainscreen__button {
-  width: 100%;
+  width: calc(100% - 40px);
+  position: absolute;
+  bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    width: max-content;
+    margin: 0;
+  }
 }
