@@ -123,6 +123,22 @@
   }
 }
 
+.nav__item--current .nav__link {
+  &:hover,
+  &:active {
+    color: #000000;
+  }
+}
+
+.nav__list--with-background .nav__item--current .nav__link {
+  @media (min-width: @desktop-width) {
+    &:hover,
+    &:active {
+      color: #ffffff;
+    }
+  }
+}
+
 .nav__toggle {
   width: 24px;
   height: 17.5px;
