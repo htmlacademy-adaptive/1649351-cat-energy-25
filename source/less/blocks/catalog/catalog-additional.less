@@ -3,6 +3,8 @@
     display: grid;
     grid-template-columns: 1fr max-content;
     column-gap: 80px;
+    margin-top: 45px;
+    margin-bottom: 86px;
   }
 }
 
@@ -13,17 +15,83 @@
 }
 
 .catalog-additional__item {
-  display: flex;
-  flex-direction: column;
-  row-gap: 10px;
-  padding: 13px 0 20px 0;
-  border-top: 1px solid #cdcdcd;
+  padding-top: 12px;
+  padding-bottom: 19px;
+  border-top: 1px solid @color_special_grey;
 
   &:last-child {
-    border-bottom: 1px solid #cdcdcd;
+    border-bottom: 1px solid @color_special_grey;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    border: 1px solid @color_special_grey;
+    border-bottom: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 15px;
+    padding-bottom: 17px;
+    border: none;
+    border-top: 1px solid @color_special_grey;
+
+    &:last-child {
+      border-bottom: 1px solid @color_special_grey;
+    }
   }
 }
 
-.catalog-additional .catalog-item__name {
-  margin: 0;
+.catalog-additional .product {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 26px;
+    padding-bottom: 28px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 25px;
+    align-items: center;
+    background: #ffffff;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 38px;
+  }
 }
+
+.catalog-additional .product__name {
+  @media (min-width: @tablet-width) {
+    text-align: left;
+  }
+}
+
+.catalog-additional .product__properties {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 1;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-end;
+    column-gap: 49px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 288px;
+    justify-content: space-between;
+  }
+}
+
+.catalog-additional .product__order {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width-only) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
