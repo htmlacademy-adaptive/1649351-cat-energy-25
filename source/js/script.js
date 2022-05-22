@@ -16,6 +16,35 @@ navToggle.addEventListener('click', function () {
 });
 
 
+// CATALOG
+
+// let catalogMoreBtn = document.querySelector('.catalog-more__button');
+// let products = document.getElementsByClassName('catalog__item');
+// products = Array.from(products);
+// console.log(products.slice(0, 2));
+// console.log(products);
+
+// allProducts = products.splice(2);
+// console.log(products); // первые 2 элемента
+// console.log(allProducts); // остальные
+
+// let catalog = document.querySelector('.catalog__list');
+// catalog.innerHTML = products;
+// catalog.innerHTML = products;
+
+// catalogMoreBtn.addEventListener('click', function () {
+//   console.log('click');
+// });
+
+
+
+
+
+
+
+
+
+
 // IMAGE-CONTROLE
 
 // let imgControlScrollbar = document.querySelector('.image-control__scrollbar');
