@@ -1,17 +1,19 @@
 .button {
   display: block;
   border: none;
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.3;
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 11px;
+  padding: 10px;
   box-sizing: border-box;
   background-color: @color_green;
   color: #ffffff;
+  cursor: pointer;
 
   &:hover {
     background-color: @color_green-hover;
@@ -31,6 +33,7 @@
 
     &:active {
       color: fade(#444444, 30%);
+      background-color: @color_gray-hover;
     }
   }
 

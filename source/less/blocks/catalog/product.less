@@ -1,0 +1,146 @@
+// PRODUCT
+
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 13px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr;
+    row-gap: 33px;
+    padding: 39px 36px;
+    background: @color_gray;
+  }
+
+  @media (min-width: @desktop-width) {
+    row-gap: 0;
+  }
+}
+
+// IMG - WRAPPER
+
+.product__img-wrapper {
+  display: grid;
+  place-items: center;
+  padding: 12px 36px 12px 36px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin-top: -84px;
+  }
+}
+
+.product--large .product__img-wrapper {
+  padding: 11px 28px 0 28px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin-top: -118px;
+  }
+}
+
+// IMG
+
+.product__img {
+  width: 68px;
+  height: 86px;
+  object-fit: contain;
+
+  @media (min-width: @tablet-width) {
+    width: 161px;
+    height: 172px;
+  }
+}
+
+.product--large .product__img {
+  width: 84px;
+  height: 101px;
+  object-fit: contain;
+
+  @media (min-width: @tablet-width) {
+    width: 168px;
+    height: 207px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 172px;
+    height: 196px;
+  }
+}
+
+// DESCRIPTION
+
+.product__description {
+  @media (min-width: @desktop-width) {
+    padding-top: 46px;
+    padding-bottom: 33px;
+  }
+}
+
+// NAME
+
+.product__name {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    line-height: 21px;
+  }
+}
+
+.product__name br {
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+// PROPERTIES
+
+.product__properties {
+  margin: 0;
+  margin-top: 14px;
+  padding: 0;
+  list-style-type: none;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  color: #444444;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 1;
+  }
+}
+
+.product__properties-item {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    padding: 7px 0;
+    border-bottom: 1px solid @color_special_grey;
+  }
+}
+
+// BUTTON
+
+.product__order {
+  @media (max-width: @mobile-width-only) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}

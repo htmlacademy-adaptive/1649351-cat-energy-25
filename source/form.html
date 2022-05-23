@@ -16,7 +16,7 @@
       <button class="nav__toggle" type="button"></button>
 
       <ul class="nav__list">
-        <li class="nav__item nav__item--current">
+        <li class="nav__item">
           <a class="nav__link" href="#">
             Главная
           </a>
@@ -26,7 +26,7 @@
             Каталог продукции
           </a>
         </li>
-        <li class="nav__item">
+        <li class="nav__item nav__item--current">
           <a class="nav__link" href="#">
             Подбор программы
           </a>
@@ -38,14 +38,13 @@
   <main class="main">
     <section class="form container">
       <form  action="https://echo.htmlacademy.ru" method="POST">
-
-        <h1 class="page-title">Подбор программы</h1>
+        <h1 class="form__title page-title">Подбор программы</h1>
 
         <p class="form__description">
           Заполните анкету, и мы подберем программу питания для вашего кота
         </p>
 
-        <div class="form__section form__flex-wrapper">
+        <div class="form__fieldset-group form__main">
           <fieldset class="form__fieldset">
             <p class="form__group">
               <label class="form__label" for="cat-name">ИМЯ:<abbr title="Поле обязательно заполнить">*</abbr></label>
@@ -65,7 +64,7 @@
 
           <fieldset class="form__fieldset form__fieldset-radio">
             <p class="form__group">
-              <input class="form__radio" type="radio" id="weight-loss" name="appointment" value="weight-loss">
+              <input class="form__radio" checked type="radio" id="weight-loss" name="appointment" value="weight-loss">
               <label class="form__label" for="weight-loss">Похудение</label>
             </p>
 
@@ -81,7 +80,7 @@
           </fieldset>
         </div>
 
-        <fieldset class="form__fieldset form__flex-wrapper">
+        <fieldset class="form__fieldset form__contacts">
           <legend class="split-title">
             <h3 class="split-title__text section-title">Контактные данные (владельца кота)</h3>
           </legend>
@@ -97,12 +96,12 @@
           </p>
         </fieldset>
 
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__comments">
           <legend class="split-title">
             <h3 class="split-title__text section-title">Комментарий</h3>
           </legend>
 
-          <textarea class="form__textarea" id="about-cat" name="about-cat" rows="4" cols="50" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="form__textarea" id="about-cat" name="about-cat" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
         <fieldset class="form__fieldset form__additional">
@@ -111,7 +110,7 @@
           </legend>
 
           <p class="form__group">
-            <input class="form__checkbox" type="checkbox" id="sweeteners" name="sweeteners">
+            <input class="form__checkbox" type="checkbox" id="sweeteners" name="sweeteners" checked>
             <label class="form__label" for="sweeteners">Сахарозаменитель</label>
           </p>
 
@@ -138,23 +137,25 @@
       </form>
     </section>
 
-    <section class="contacts contacts--gray">
+    <div class="contacts contacts--gray">
       <div class="contacts___description-wrapper">
-        <div class="contacts___description container">
-          <h2 class="contacts__title">
-            Приглашаем к сотрудничеству дилеров!
-          </h2>
+        <div class="container">
+          <p class="contacts___description">
+            <span class="contacts__title">
+              Приглашаем к сотрудничеству дилеров!
+            </span>
 
-          <p class="contacts__address">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            <span class="contacts__address">
+              ул. Большая Конюшенная, д. 19/8 <br><br> Санкт-Петербург
+            </span>
           </p>
         </div>
       </div>
 
       <div class="contacts___map">
-        <iframe class="map" src="https://yandex.ru/map-widget/v1/-/CCUFuOeh~C" allowfullscreen="true"></iframe>
+        <iframe class="map" src="https://yandex.ru/map-widget/v1/-/CCUFuOeh~C" allowfullscreen="allowfullscreen"></iframe>
       </div>
-    </section>
+    </div>
   </main>
 
   <footer class="footer">
@@ -169,9 +170,9 @@
         <li class="socials__item"><a class="socials__link socials__link--icon-telegram" href="#"></a></li>
       </ul>
 
-      <a class="footer__site-develop site-develop" href="https://htmlacademy.ru/">
-        <span class="site-develop__name">HTML Academy</span>
-        <img class="site-develop__logo" src="img/logos/site-develop-logo.png" alt="Логотип разработчика">
+      <a class="footer__site-develop" href="https://htmlacademy.ru/">
+        <span class="footer__site-develop-name">HTML Academy</span>
+        <img class="footer__site-develop-logo" src="img/logos/site-develop-logo.png" alt="Логотип разработчика">
       </a>
     </div>
   </footer>
