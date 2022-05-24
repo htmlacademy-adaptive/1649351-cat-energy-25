@@ -6,12 +6,19 @@
       content: "";
       width: 50%;
       height: 694px;
-      background: url("../img/index/mainscreen_desktop.png") no-repeat top;
+      //background: url("../img/index/mainscreen_desktop.png") no-repeat top;
+      background: url("../img/index/bg-mainscreen.jpg") no-repeat top;
       background-size: cover;
       position: absolute;
       z-index: -1;
       top: 0;
       right: 0;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../img/index/bg-mainscreen@2x.jpg") no-repeat top;
+        //background-size: 720px auto;
+        background-size: 100% 100%;
+      }
     }
   }
 }
