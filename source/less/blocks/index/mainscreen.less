@@ -5,9 +5,14 @@
   justify-content: center;
   position: relative;
   z-index: 1;
-  background: url("../img/index/main_bg.png") no-repeat top;
+  background: url("../img/index/bg-mainscreen-mobile.jpg") no-repeat top;
   background-size: 100%;
   padding-bottom: 40px;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/index/bg-mainscreen-mobile@2x.jpg") no-repeat top;
+  }
+
 
   @media (min-width: @tablet-width) {
     background: none;
@@ -86,9 +91,8 @@
 }
 
 .mainscreen__img {
-  border: 1px solid #c42a2a;
-  // width: 280px;
-  // height: 270px;
+  width: 280px;
+  height: 270px;
 
   @media (min-width: @tablet-width) {
     width: 709px;
@@ -102,6 +106,10 @@
     height: 500px;
     margin-top: 20px;
   }
+}
+
+.mainscreen__img img {
+  width: 100%;
 }
 
 .mainscreen__button {

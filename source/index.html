@@ -55,7 +55,9 @@
 
         <div class="mainscreen__img">
           <picture>
-            <img src="/img/index/img-mainscreen.png" srcset="/img/index/img-mainscreen@2x.png 2x" width="280" height="270" alt="баннер «Кэт энерджи»">
+            <source media="(min-width: 1440px)" srcset="img/index/img-mainscreen-desktop.png 1x, img/index/img-mainscreen-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index/img-mainscreen-tablet.png 1x, img/index/img-mainscreen-tablet@2x.png 2x">
+            <img src="/img/index/img-mainscreen-mobile.png" srcset="/img/index/img-mainscreen-mobile@2x.png 2x" width="280" height="270" alt="баннер «Кэт энерджи»">
           </picture>
         </div>
       </section>
