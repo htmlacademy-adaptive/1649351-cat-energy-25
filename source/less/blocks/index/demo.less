@@ -143,38 +143,3 @@
     padding-left: 63px;
   }
 }
-
-// RESULT
-
-.demo__image {
-  height: 280px;
-  width: 100%;
-
-  @media (min-width: @tablet-width) {
-    height: 511px;
-    margin-top: -170px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-top: -182px;
-  }
-}
-
-.demo__image-before,
-.demo__image-after {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: none;
-}
-
-.demo__image--show {
-  display: block;
-}
-
-.demo__image-control {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 15px;
-}
