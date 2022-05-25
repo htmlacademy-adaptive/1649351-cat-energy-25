@@ -19,11 +19,13 @@
   }
 
   @media (min-resolution: 2dppx) {
-    background: url("../img/cta/bg-cta-mobile@2x.jpg") no-repeat top;
+    background: url("../img/cta/bg-cta-mobile@2x.jpg") no-repeat center;
+    background-size: cover;
   }
 
   @media (min-width: @tablet-width) {
     background: url("../img/cta/bg-cta-tablet.jpg") no-repeat center;
+    background-size: cover;
     height: 200px;
     padding: 57px 124px 60px 77px;
     margin-top: 69px;
@@ -32,11 +34,11 @@
 
   @media (min-width: @tablet-width) and (min-resolution: 2dppx) {
     background: url("../img/cta/bg-cta-tablet@2x.jpg") no-repeat center;
-    background-size: 100% 100%;
+    background-size: cover;
   }
 
   @media (min-width: @desktop-width) {
-    background: url("../img/cta/bg-cta-tablet.jpg") no-repeat center;
+    background: url("../img/cta/bg-cta-mobile.jpg") no-repeat center;
     background-size: cover;
     height: 290px;
     padding: 56px 41px 42px 41px;
@@ -45,7 +47,7 @@
   }
 
   @media (min-width: @desktop-width) and (min-resolution: 2dppx) {
-    background: url("../img/cta/bg-cta-tablet@2x.jpg") no-repeat center;
+    background: url("../img/cta/bg-cta-mobile@2x.jpg") no-repeat center;
     background-size: cover;
   }
 }
@@ -69,6 +71,10 @@
     justify-content: space-between;
     width: 100%;
     padding: 0;
+
+    &::before {
+      margin: 0;
+    }
   }
 
   @media (min-width: @desktop-width) {
