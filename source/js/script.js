@@ -16,6 +16,35 @@ navToggle.addEventListener('click', function () {
 });
 
 
+// COMPARISON
+
+let comparisonScrollbar = document.querySelector('.comparison__control-scrollbar');
+let comparisonToggle = document.querySelector('.comparison__control-toggle');
+let comparisonBtn = document.getElementsByClassName('.comparison__control-btn');
+
+let comparisonBefore = document.querySelector('.comparison__image--before');
+let comparisonAfter = document.querySelector('.comparison__image--after');
+
+function showСomparison() {
+  console.log('click');
+  if (comparisonAfter.style.display == 'none') {
+    comparisonBefore.style.display = 'none';
+    comparisonAfter.style.display = 'block';
+    comparisonScrollbar.classList.add('comparison__control-scrollbar--active');
+  } else {
+    comparisonBefore.style.display = 'block';
+    comparisonAfter.style.display = 'none';
+    comparisonScrollbar.classList.remove('comparison__control-scrollbar--active');
+  }
+}
+
+comparisonToggle.addEventListener('click', function () {
+  showСomparison();
+});
+comparisonBtn.addEventListener('click', function () {
+  showСomparison();
+});
+
 // CATALOG
 
 // let catalogMoreBtn = document.querySelector('.catalog-more__button');
@@ -35,45 +64,3 @@ navToggle.addEventListener('click', function () {
 // catalogMoreBtn.addEventListener('click', function () {
 //   console.log('click');
 // });
-
-
-
-
-
-
-// IMAGE-CONTROLE
-
-let imgControlScrollbar = document.querySelector('.image-control__scrollbar');
-let imgBefore = document.querySelector('.demo__image-before');
-let imgAfter = document.querySelector('.demo__image-after');
-
-imgControlScrollbar.addEventListener('click', function () {
-  if (imgBefore.classList.contains('demo__image--show')) {
-    imgBefore.classList.removeClass('demo__image--show');
-    imgAfter.classList.add('demo__image--show');
-  } else {
-    imgBefore.classList.addClass('demo__image--show');
-    imgAfter.classList.adremoveClass('demo__image--show');
-  }
-});
-
-
-
-$( document ).ready(function() {
-
-  // image-control
-
-  // $(".image-control__scrollbar").on("click", function() {
-
-  //   $(this).toggleClass('image-control__scrollbar--active');
-
-  //   if ($('.demo__image-before').hasClass('demo__image--show')) {
-  //     $('.demo__image-before').removeClass('demo__image--show');
-  //     $('.demo__image-after').addClass('demo__image--show');
-  //   } else {
-  //     $('.demo__image-before').addClass('demo__image--show');
-  //     $('.demo__image-after').removeClass('demo__image--show');
-  //   }
-  // });
-
-});
