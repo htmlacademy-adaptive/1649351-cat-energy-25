@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
   <title>Подбор программы</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page form-page">
   <header class="header container">
-    <a href="/" class="header__logo">
-      <img src="/img/logos/logo-group.svg" alt="logo_text.png" class="logo-header">
+    <a class="header__logo" href="/">
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/logos/logo-tablet.svg">
+        <img class="logo-header" src="/img/logos/logotype-phone.svg" width="191" height="38" alt="«Кэт энерджи»">
+      </picture>
     </a>
-
     <nav class="header__nav nav nav--closed nav--nojs">
       <button class="nav__toggle" type="button"></button>
-
       <ul class="nav__list">
         <li class="nav__item">
-          <a class="nav__link" href="#">
+          <a class="nav__link" href="/">
             Главная
           </a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#">
+          <a class="nav__link" href="catalog.html">
             Каталог продукции
           </a>
         </li>
         <li class="nav__item nav__item--current">
-          <a class="nav__link" href="#">
+          <a class="nav__link" href="form.html">
             Подбор программы
           </a>
         </li>
@@ -101,6 +106,7 @@
             <h3 class="split-title__text section-title">Комментарий</h3>
           </legend>
 
+          <label class="form__label visually-hidden" for="about-cat">Расскажите обо всех повадках кота</label>
           <textarea class="form__textarea" id="about-cat" name="about-cat" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
@@ -140,15 +146,15 @@
     <div class="contacts contacts--gray">
       <div class="contacts___description-wrapper">
         <div class="container">
-          <p class="contacts___description">
-            <span class="contacts__title">
-              Приглашаем к сотрудничеству дилеров!
-            </span>
+          <div class="contacts___description">
+            <p class="contacts__title">
+              Приглашаем к <br> сотрудничеству <br> дилеров!
+            </p>
 
-            <span class="contacts__address">
-              ул. Большая Конюшенная, д. 19/8 <br><br> Санкт-Петербург
-            </span>
-          </p>
+            <p class="contacts__address">
+              ул. Большая <br> Конюшенная, д. 19/8 <br> <span>Санкт-Петербург</span>
+            </p>
+          </div>
         </div>
       </div>
 
@@ -161,18 +167,22 @@
   <footer class="footer">
     <div class="footer__wrapper container">
       <a class="footer__logo" href="/">
-        <img src="img/logos/name-company.svg" alt="Логотип сайта для подвала" class="logo-footer">
+        <img class="logo-footer" src="img/logos/name-company.svg" width="128" height="24" alt="«Кэт энерджи»">
       </a>
-
       <ul class="footer__socials socials">
-        <li class="socials__item"><a class="socials__link socials__link--icon-vk" href="#"></a></li>
-        <li class="socials__item"><a class="socials__link socials__link--icon-youtube" href="#"></a></li>
-        <li class="socials__item"><a class="socials__link socials__link--icon-telegram" href="#"></a></li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--icon-vk" href="#"></a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--icon-youtube" href="#"></a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--icon-telegram" href="#"></a>
+        </li>
       </ul>
-
-      <a class="footer__site-develop" href="https://htmlacademy.ru/">
+      <a class="footer__site-develop" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="footer__site-develop-name">HTML Academy</span>
-        <img class="footer__site-develop-logo" src="img/logos/site-develop-logo.png" alt="Логотип разработчика">
+        <img class="footer__site-develop-logo" src="img/logos/site-develop-logo.png" width="27" height="34" alt="Логотип разработчика">
       </a>
     </div>
   </footer>

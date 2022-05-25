@@ -5,9 +5,15 @@
   justify-content: center;
   position: relative;
   z-index: 1;
-  background: url("../img/index/main_bg.png") no-repeat top;
+  background: url("../img/index/bg-mainscreen-mobile.jpg") no-repeat top;
   background-size: 100%;
   padding-bottom: 40px;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/index/bg-mainscreen-mobile@2x.jpg") no-repeat top;
+    background-size: 100%;
+  }
+
 
   @media (min-width: @tablet-width) {
     background: none;
@@ -38,7 +44,7 @@
 }
 
 .mainscreen__caption {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -50,6 +56,8 @@
   @media (min-width: @tablet-width) {
     padding-top: 41px;
     padding-bottom: 50px;
+    font-size: 20px;
+    line-height: 1;
   }
 }
 
@@ -85,10 +93,9 @@
   }
 }
 
-.mainscreen__background-front {
+.mainscreen__img {
   width: 280px;
   height: 270px;
-  object-fit: contain;
 
   @media (min-width: @tablet-width) {
     width: 709px;
@@ -102,6 +109,10 @@
     height: 500px;
     margin-top: 20px;
   }
+}
+
+.mainscreen__img img {
+  width: 100%;
 }
 
 .mainscreen__button {

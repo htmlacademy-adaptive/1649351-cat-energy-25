@@ -4,6 +4,16 @@
   }
 }
 
+.form.container {
+  @media (min-width: @tablet-width) {
+    padding: 0 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+}
+
 .form__title {
   padding-top: 27px;
   padding-bottom: 37px;
@@ -11,7 +21,7 @@
 
 .form__description {
   margin: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -83,7 +93,7 @@
 // LABEL
 
 .form__label {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -106,7 +116,7 @@
 
 .form__input,
 .form__textarea {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -143,7 +153,7 @@
   &::-moz-placeholder,
   &:-ms-input-placeholder,
   &:-moz-placeholder {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;

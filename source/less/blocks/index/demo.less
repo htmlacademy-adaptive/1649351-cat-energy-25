@@ -38,7 +38,8 @@
   }
 }
 
-.demo__result {
+.demo__comparison {
+  // border: 1px solid #000000;
   padding-bottom: 40px;
 
   @media (min-width: @tablet-width) {
@@ -117,7 +118,7 @@
 
 .demo__expenses {
   margin: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -141,39 +142,4 @@
     display: inline-block;
     padding-left: 63px;
   }
-}
-
-// RESULT
-
-.demo__image {
-  height: 280px;
-  width: 100%;
-
-  @media (min-width: @tablet-width) {
-    height: 511px;
-    margin-top: -170px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-top: -182px;
-  }
-}
-
-.demo__image-before,
-.demo__image-after {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: none;
-}
-
-.demo__image--show {
-  display: block;
-}
-
-.demo__image-control {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 15px;
 }
