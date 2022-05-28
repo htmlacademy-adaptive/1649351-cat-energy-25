@@ -9,6 +9,7 @@
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   </head>
   <body class="page main-page">
     <header class="header container">
@@ -223,7 +224,9 @@
         </ul>
         <a class="footer__site-develop" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="footer__site-develop-name">HTML Academy</span>
-          <img class="footer__site-develop-logo" src="img/logos/site-develop-logo.png" width="27" height="34" alt="Логотип разработчика">
+          <svg class="footer__site-develop-logo" width="27" height="34" aria-label="Логотип HTMLAcademy">
+            <use xlink:href="/img/sprite/sprite.svg#logo-html-icon"></use>
+          </svg>
         </a>
       </div>
     </footer>

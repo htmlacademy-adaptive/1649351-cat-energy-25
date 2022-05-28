@@ -15,7 +15,12 @@
   margin-top: 20px;
 
   @media (min-width: @tablet-width) {
-    padding: 77px 316px 57px 52px;
+    padding: 76px 316px 57px 52px;
+    margin-top: 30px;
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -24,11 +29,11 @@
 
   &--weight-loss {
     background: url("../img/features/cat_back.svg") no-repeat @color_gray;
-    background-position: 22px 21px;
+    background-position: 22px 23px;
 
     @media (min-width: @tablet-width) {
       background-size: 200px 211px;
-      background-position: 90%;
+      background-position: 88%;
     }
 
     @media (min-width: @desktop-width) {
@@ -39,11 +44,11 @@
 
   &--mass-gain {
     background: url("../img/features/cat_back_2.svg") no-repeat @color_gray;
-    background-position: 13px 24px;
+    background-position: 13px 26px;
 
     @media (min-width: @tablet-width) {
       background-size: 268px 200px;
-      background-position: 95%;
+      background-position: 93% 53%;
     }
 
     @media (min-width: @desktop-width) {
@@ -57,7 +62,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  line-height: 1.54;
+  line-height: 1.6;
   text-transform: uppercase;
   margin: 0;
   padding-left: 70px;
@@ -78,10 +83,10 @@
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.29;
+  line-height: 1.28;
   color: @color_text_base;
   margin: 0;
-  margin-top: 33px;
+  margin-top: 31px;
   margin-bottom: 22px;
 
   @media (min-width: @tablet-width) {
@@ -90,7 +95,7 @@
     line-height: 1.5;
     color: #000000;
     margin-top: 24px;
-    margin-bottom: 48px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: @desktop-width) {
@@ -101,7 +106,7 @@
 .features__link {
   display: flex;
   align-items: center;
-  padding-top: 15px;
+  padding-top: 17px;
   border-top: 1px solid #d9d9d9;
   font-style: normal;
   font-weight: 400;

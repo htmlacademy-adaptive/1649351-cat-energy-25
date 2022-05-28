@@ -1,5 +1,5 @@
 .work-example {
-  padding-top: 20px;
+  padding-top: 22px;
   padding-bottom: 50px;
 
   @media (min-width: @tablet-width) {
@@ -14,7 +14,7 @@
 
 .work-example__list {
   padding: 0;
-  margin-top: 40px;
+  margin-top: 42px;
   margin-bottom: 0;
   list-style-type: none;
   counter-reset: section;
@@ -22,8 +22,8 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 153px;
-    row-gap: 37px;
+    column-gap: 60px;
+    row-gap: 19px;
   }
 
   @media (min-width: @desktop-width) {
@@ -58,19 +58,21 @@
     margin-right: 20px;
 
     @media (min-width: @tablet-width) {
-      margin-top: 40px;
+      margin-top: 31px;
       margin-right: 0;
       margin-bottom: 31px;
+      min-width: 80px;
+      min-height: 80px;
     }
   }
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
     align-items: flex-start;
-    padding-right: 38px;
+    padding-right: 75px;
     padding-bottom: 84px;
     font-size: 16px;
-    line-height: 1.35;
+    line-height: 1.5;
 
     &:not(:last-child) {
       margin-bottom: 0;
@@ -85,8 +87,8 @@
       line-height: 1;
       color: @color_gray;
       position: absolute;
-      top: 0;
-      right: 0;
+      top: -8px;
+      right: 77px;
       z-index: -1;
     }
   }
