@@ -8,7 +8,7 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page form-page">
   <header class="header container">
@@ -46,7 +46,7 @@
         <h1 class="form__title page-title">Подбор программы</h1>
 
         <p class="form__description">
-          Заполните анкету, и мы подберем программу питания для вашего кота
+          Заполните анкету, и мы подберем <br> программу питания для вашего кота
         </p>
 
         <div class="form__fieldset-group form__main">
@@ -69,17 +69,17 @@
 
           <fieldset class="form__fieldset form__fieldset-radio">
             <p class="form__group">
-              <input class="form__radio" checked type="radio" id="weight-loss" name="appointment" value="weight-loss">
+              <input class="form__radio visually-hidden" type="radio" id="weight-loss" name="appointment" value="weight-loss">
               <label class="form__label" for="weight-loss">Похудение</label>
             </p>
 
             <p class="form__group">
-              <input class="form__radio" type="radio" id="mass-gain" name="appointment" value="mass-gain">
+              <input class="form__radio visually-hidden" type="radio" id="mass-gain" name="appointment" value="mass-gain">
               <label class="form__label" for="mass-gain">Набор массы</label>
             </p>
 
             <p class="form__group">
-              <input class="form__radio" type="radio" id="unknown" name="appointment" value="unknown">
+              <input class="form__radio visually-hidden" type="radio" id="unknown" name="appointment" value="unknown">
               <label class="form__label" for="unknown">Не знаю (Нужен ваш совет)</label>
             </p>
           </fieldset>
@@ -87,17 +87,23 @@
 
         <fieldset class="form__fieldset form__contacts">
           <legend class="split-title">
-            <h3 class="split-title__text section-title">Контактные данные (владельца кота)</h3>
+            <h3 class="split-title__text section-title">Контактные данные <br> (владельца кота)</h3>
           </legend>
 
           <p class="form__group">
             <label class="form__label" for="owner-name">E-mail:<abbr title="Поле обязательно заполнить">*</abbr></label>
-            <input class="form__input" type="email" id="owner-name" name="owner-name" placeholder="kuklachev@gmail.com" required>
+            <input class="form__input form__input--icon" type="email" id="owner-name" name="owner-name" placeholder="kuklachev@gmail.com" required>
+            <svg  width="17" height="13">
+              <use xlink:href="/img/sprite.svg#email"></use>
+            </svg>
           </p>
 
           <p class="form__group">
             <label class="form__label" for="owner-phone">Телефон:<abbr title="Поле обязательно заполнить">*</abbr></label>
-            <input class="form__input" type="tel" name="owner-phone" id="owner-phone" placeholder="8 (960) 900-60-90" required>
+            <input class="form__input form__input--icon" type="tel" name="owner-phone" id="owner-phone" placeholder="8 (960) 900-60-90" required>
+            <svg width="19" height="20">
+              <use xlink:href="/img/sprite.svg#phone"></use>
+            </svg>
           </p>
         </fieldset>
 
@@ -116,22 +122,22 @@
           </legend>
 
           <p class="form__group">
-            <input class="form__checkbox" type="checkbox" id="sweeteners" name="sweeteners" checked>
+            <input class="form__checkbox visually-hidden" type="checkbox" id="sweeteners" name="sweeteners">
             <label class="form__label" for="sweeteners">Сахарозаменитель</label>
           </p>
 
           <p class="form__group">
-            <input class="form__checkbox" type="checkbox" id="drinking-water" name="drinking-water">
+            <input class="form__checkbox visually-hidden" type="checkbox" id="drinking-water" name="drinking-water">
             <label class="form__label" for="drinking-water">Питьевая вода</label>
           </p>
 
           <p class="form__group">
-            <input class="form__checkbox" type="checkbox" id="milk" name="milk">
+            <input class="form__checkbox visually-hidden" type="checkbox" id="milk" name="milk">
             <label class="form__label" for="milk">Молоко</label>
           </p>
 
           <p class="form__group">
-            <input class="form__checkbox" type="checkbox" id="vitamins" name="vitamins">
+            <input class="form__checkbox visually-hidden" type="checkbox" id="vitamins" name="vitamins">
             <label class="form__label" for="vitamins">Витамины</label>
           </p>
         </fieldset>
@@ -148,7 +154,7 @@
         <div class="container">
           <div class="contacts___description">
             <p class="contacts__title">
-              Приглашаем к <br> сотрудничеству <br> дилеров!
+              Приглашаем <br> к сотрудничеству <br> дилеров!
             </p>
 
             <p class="contacts__address">
@@ -171,23 +177,36 @@
       </a>
       <ul class="footer__socials socials">
         <li class="socials__item">
-          <a class="socials__link socials__link--icon-vk" href="#"></a>
+          <a class="socials__link" href="#">
+            <svg class="socials__link-vk" width="28" height="22" aria-label="Перейти на страничку вконтакте">
+              <use xlink:href="/img/sprite.svg#vk"></use>
+            </svg>
+          </a>
         </li>
         <li class="socials__item">
-          <a class="socials__link socials__link--icon-youtube" href="#"></a>
+          <a class="socials__link" href="#">
+            <svg class="socials__link-youtube" width="28" height="22" aria-label="Перейти на страничку youtube">
+              <use xlink:href="/img/sprite.svg#youtube"></use>
+            </svg>
+          </a>
         </li>
         <li class="socials__item">
-          <a class="socials__link socials__link--icon-telegram" href="#"></a>
+          <a class="socials__link" href="#">
+            <svg class="socials__link-telegram" width="28" height="22" aria-label="Перейти на страничку telegram">
+              <use xlink:href="/img/sprite.svg#telegram"></use>
+            </svg>
+          </a>
         </li>
       </ul>
       <a class="footer__site-develop" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="footer__site-develop-name">HTML Academy</span>
-        <img class="footer__site-develop-logo" src="img/logos/site-develop-logo.png" width="27" height="34" alt="Логотип разработчика">
+        <svg class="footer__site-develop-logo" width="27" height="34" aria-label="Логотип HTMLAcademy">
+          <use xlink:href="/img/sprite.svg#logo_html"></use>
+        </svg>
       </a>
     </div>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="/js/script.js"></script>
 </body>
 </html>

@@ -34,12 +34,12 @@
   width: 100%;
 
   @media (min-width: @tablet-width) {
-    padding-left: 90px;
+    padding-left: 87px;
   }
 
   @media (min-width: @desktop-width) {
     width: auto;
-    padding-left: 70px;
+    padding-left: 80px;
   }
 }
 
@@ -68,8 +68,8 @@
     padding-top: 40px;
   }
 
-  @media (min-width: @tablet-width) {
-    padding-top: 95px;
+  @media (min-width: @desktop-width) {
+    padding-top: 113px;
   }
 }
 
@@ -98,16 +98,17 @@
   height: 270px;
 
   @media (min-width: @tablet-width) {
-    width: 709px;
+    width: 708px;
     height: 609px;
-    margin-top: -88px;
+    margin-top: -83px;
     z-index: -1;
   }
 
   @media (min-width: @desktop-width) {
     width: 552px;
     height: 500px;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-left: -47px;
   }
 }
 
@@ -118,11 +119,18 @@
 .mainscreen__button {
   width: calc(100% - 40px);
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
+  font-size: 14px;
+  line-height: 1.28;
 
   @media (min-width: @tablet-width) {
     position: relative;
     width: max-content;
     margin: 0;
+    bottom: 0;
+    font-size: 20px;
+    line-height: 1;
+    padding: 17px 28px;
+    left: 2px;
   }
 }

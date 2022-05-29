@@ -3,17 +3,52 @@
   flex-direction: column;
   position: relative;
   padding-top: 10px;
-  padding-bottom: 11px;
+  padding-bottom: 0;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 24px;
+    padding: 24px 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    padding-top: 51px;
   }
 }
 
 .header__logo {
   width: max-content;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
+.header__logo img {
+  width: 100%;
+}
+
+.header__nav {
+  margin-top: 12px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 18px;
+  }
 }
