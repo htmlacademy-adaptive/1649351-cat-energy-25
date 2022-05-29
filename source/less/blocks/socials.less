@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   list-style-type: none;
-  column-gap: 25px;
+  column-gap: 27px;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 
@@ -16,19 +16,16 @@
   display: block;
   width: 26px;
   height: 19px;
+}
 
-  &--icon-vk {
-    background: url("../img/socials/vk.svg") no-repeat center;
-    background-size: contain;
+.socials__link svg {
+  fill: #666666;
+
+  &:hover {
+    fill: @color_green;
   }
 
-  &--icon-youtube {
-    background: url("../img/socials/youtube.svg") no-repeat center;
-    background-size: contain;
-  }
-
-  &--icon-telegram {
-    background: url("../img/socials/telegram.svg") no-repeat center;
-    background-size: contain;
+  &:active {
+    fill: fade(@color_green, 30%);
   }
 }

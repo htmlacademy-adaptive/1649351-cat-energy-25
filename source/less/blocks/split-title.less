@@ -8,20 +8,32 @@
     position: absolute;
     left: 0;
     width: 100%;
+    margin-top: 4px;
     border-bottom: 2px solid #68b738;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 9px;
+    }
   }
 }
 
 .split-title__text {
   padding-right: 20px;
-  padding-left: 30px;
+  padding-left: 28px;
   margin-left: -30px;
   background-color: #ffffff;
   position: relative;
   z-index: 1;
+  text-align: left;
 
   @media (min-width: @tablet-width) {
     padding: 0 40px;
-    margin-left: -40px;
+    margin-left: -43px;
+  }
+}
+
+.split-title__text br {
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
