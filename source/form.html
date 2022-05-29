@@ -92,12 +92,19 @@
 
           <p class="form__group">
             <label class="form__label" for="owner-name">E-mail:<abbr title="Поле обязательно заполнить">*</abbr></label>
-            <input class="form__input" type="email" id="owner-name" name="owner-name" placeholder="kuklachev@gmail.com" required>
+            <input class="form__input form__input--icon" type="email" id="owner-name" name="owner-name" placeholder="kuklachev@gmail.com" required>
+            <svg  width="17" height="13">
+              <use xlink:href="/img/sprite.svg#email"></use>
+            </svg>
           </p>
 
           <p class="form__group">
             <label class="form__label" for="owner-phone">Телефон:<abbr title="Поле обязательно заполнить">*</abbr></label>
-            <input class="form__input" type="tel" name="owner-phone" id="owner-phone" placeholder="8 (960) 900-60-90" required>
+            <!-- стиль для поля, если он с ошибкой  form__input--error -->
+            <input class="form__input form__input--icon" type="tel" name="owner-phone" id="owner-phone" placeholder="8 (960) 900-60-90" required>
+            <svg width="19" height="20">
+              <use xlink:href="/img/sprite.svg#phone"></use>
+            </svg>
           </p>
         </fieldset>
 
@@ -116,7 +123,7 @@
           </legend>
 
           <p class="form__group">
-            <input class="form__checkbox visually-hidden" type="checkbox" id="sweeteners" name="sweeteners" disabled checked>
+            <input class="form__checkbox visually-hidden" type="checkbox" id="sweeteners" name="sweeteners">
             <label class="form__label" for="sweeteners">Сахарозаменитель</label>
           </p>
 
