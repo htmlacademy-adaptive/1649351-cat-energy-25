@@ -6,8 +6,13 @@
   @media (min-width: @tablet-width) {
     padding: 39px 36px;
     border: 2px solid @color_gray;
-    justify-content: space-between;
     height: 100%;
+  }
+}
+
+.catalog-more br {
+  @media (max-width: @mobile-width-only) {
+    display: none;
   }
 }
 
@@ -39,11 +44,16 @@
       margin-top: 13px;
       margin-bottom: 50px;
     }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 47px;
+    }
   }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 1.1;
+    padding-bottom: 24px;
   }
 }
 
@@ -66,4 +76,9 @@
 .catalog-more__button {
   margin-top: 21px;
   width: 100%;
+  font-size: 16px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 81px;
+  }
 }
