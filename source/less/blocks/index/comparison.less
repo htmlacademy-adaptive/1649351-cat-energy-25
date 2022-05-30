@@ -36,6 +36,10 @@
   justify-content: center;
   margin-top: 21px;
 
+  @media (min-width: @tablet-width) {
+    margin-top: 14px;
+  }
+
   @media (min-width: @desktop-width) {
     margin-top: 12px;
   }
@@ -53,6 +57,7 @@
   padding: 0;
   border: none;
   background: none;
+  cursor: pointer;
 
 
   @media (min-width: @tablet-width) {
@@ -82,7 +87,6 @@
   min-width: 86px;
   display: flex;
   align-items: center;
-  cursor: pointer;
 
   &--active {
     justify-content: flex-end;
@@ -107,7 +111,6 @@
   background: @color_green;
   border: none;
   border-radius: 6px;
-  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     width: 34px;

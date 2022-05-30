@@ -43,7 +43,11 @@
   @media (min-width: @tablet-width) {
     padding: 0;
     margin-top: -112px;
-    margin-bottom: 24px;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 26px;
   }
 }
 
@@ -100,11 +104,13 @@
   color: #000000;
   text-transform: uppercase;
   margin: 0;
+  max-width: 95px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 24px;
     text-align: center;
+    max-width: none;
   }
 
   @media (min-width: @desktop-width) {
@@ -113,6 +119,8 @@
 }
 
 .product__name br {
+  display: none;
+
   @media (min-width: @tablet-width) {
     display: block;
   }
