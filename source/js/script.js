@@ -1,10 +1,6 @@
-// NAVIGATION
-
 let navMain = document.querySelector('.nav');
 let navToggle = document.querySelector('.nav__toggle');
-
 navMain.classList.remove('nav--nojs');
-
 navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('nav--closed')) {
     navMain.classList.remove('nav--closed');
@@ -15,14 +11,10 @@ navToggle.addEventListener('click', function () {
   }
 });
 
-
-// COMPARISON
-
 let comparisonScrollbar = document.querySelector('.comparison__control-scrollbar');
 let comparisonToggle = document.querySelector('.comparison__control-toggle');
 let comparisonBtnBefore = document.querySelector('.comparison__control-btn--before');
 let comparisonBtnAfter = document.querySelector('.comparison__control-btn--after');
-
 let comparisonBefore = document.querySelector('.comparison__image--before');
 let comparisonAfter = document.querySelector('.comparison__image--after');
 
@@ -42,7 +34,6 @@ function showСomparison(flag) {
 comparisonBtnBefore.addEventListener('click', function () {
   showСomparison('before');
 });
-
 comparisonBtnAfter.addEventListener('click', function () {
   showСomparison('after');
 });
