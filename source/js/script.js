@@ -20,27 +20,29 @@ navToggle.addEventListener('click', function () {
 
 let comparisonScrollbar = document.querySelector('.comparison__control-scrollbar');
 let comparisonToggle = document.querySelector('.comparison__control-toggle');
-let comparisonBtn = document.getElementsByClassName('.comparison__control-btn');
+let comparisonBtnBefore = document.querySelector('.comparison__control-btn--before');
+let comparisonBtnAfter = document.querySelector('.comparison__control-btn--after');
 
 let comparisonBefore = document.querySelector('.comparison__image--before');
 let comparisonAfter = document.querySelector('.comparison__image--after');
 
-function showСomparison() {
-  console.log('click');
-  if (comparisonAfter.style.display == 'none') {
+function showСomparison(flag) {
+  if (flag == 'after') {
     comparisonBefore.style.display = 'none';
     comparisonAfter.style.display = 'block';
     comparisonScrollbar.classList.add('comparison__control-scrollbar--active');
-  } else {
+
+  } else if (flag == 'before') {
     comparisonBefore.style.display = 'block';
     comparisonAfter.style.display = 'none';
     comparisonScrollbar.classList.remove('comparison__control-scrollbar--active');
   }
 }
 
-comparisonToggle.addEventListener('click', function () {
-  showСomparison();
+comparisonBtnBefore.addEventListener('click', function () {
+  showСomparison('before');
 });
-comparisonBtn.addEventListener('click', function () {
-  showСomparison();
+
+comparisonBtnAfter.addEventListener('click', function () {
+  showСomparison('after');
 });
